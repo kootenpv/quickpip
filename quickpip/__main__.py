@@ -1,3 +1,6 @@
+""" When we want to create a package that also has a CLI
+Then it is usually a good idea to separate the logic into it's own file: __main__
+"""
 from quickpip import print_version
 from quickpip import run
 

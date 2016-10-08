@@ -13,7 +13,7 @@ setup(name='quickpip',
       url='https://github.com/kootenpv/quickpip',
       author_email='kootenpv@gmail.com',
       install_requires=[
-          'tox', 'pytest'
+          'tox', 'pytest', 'sh'
       ],
       entry_points={
           'console_scripts': ['quickpip = quickpip.__main__:main']
