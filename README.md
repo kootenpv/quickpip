@@ -6,7 +6,14 @@
 
 ### Initial flow
 
-- Remove preexisting `.git` and make a new repo:
+- Clone this repo locally:
+
+```bash
+git clone https://github.com/kootenpv/quickpip
+cd quickpip
+```
+
+- Remove preexisting `.git` and make a new git repo:
 
 ```bash
 rm -rf .git/
@@ -35,20 +42,20 @@ find . -type f -print0 | xargs -0 sed -i 's/quickpip/yourtool/g'
 
 - Run tests with `py.test` (quick) or `tox` (all python versions)
 
-- Be happy. Commit your changes:
+- Be happy. Commit your changes to your local git:
 
 ```bash
 git add *
 git commit -m "initial commit"
 ```
-- Register/login on [github](https://github.com) and create a new empty repository "yourtools"
+- Register/login on [github](https://github.com) and create a new empty repository "yourtool"
 
-- Register on [travis-ci.org](https://travis-ci.org/). Make sure you Sync your github. Activate "yourtools".
+- Register on [travis-ci.org](https://travis-ci.org/). Make sure you Sync your github. Activate "yourtool".
 
 - Now run:
 
 ```bash
-git remote add origin git@github.com:yourusername/yourtools.git
+git remote add origin git@github.com:yourusername/yourtool.git
 git push -u origin master
 ```
 
@@ -83,7 +90,9 @@ python setup.py register
 python deploy.py
 ```
 
-Congratulations :) Now everyone can download *your tools* (using `pip install yourtools`)!
+Congratulations :) Now everyone can download *your tool* (using `pip install yourtool`)!
+
+Install yourtool and try it out on the command line by running `yourtool`
 
 Visit every file and try to cleanup whatever you want. Note that you can always test your changes and if something breaks, go back to a previous version on git.
 
@@ -103,7 +112,7 @@ Feel free to hit that "Star" button on the [quickpip github](https://github.com/
 
 - `git push` your changes to github
 
-- Nicely see your tests pass on [travis](https://travis-ci.org/kootenpv/yourtools), knowing that others can easily contribute.
+- Nicely see your tests pass on [travis](https://travis-ci.org/kootenpv/yourtool), knowing that others can easily contribute.
 
 - When you've added a big new feature, add 1 to your minor version in `setup.py`
 
@@ -111,7 +120,7 @@ Feel free to hit that "Star" button on the [quickpip github](https://github.com/
 
 - Run `python deploy.py` to deploy a new version on pypi
 
-### Adding new packages
+### Adding new dependencies
 
 Add them in your `setup.py` under `install_requires`. Also add them in your `tox.ini` file under `deps`.
 
