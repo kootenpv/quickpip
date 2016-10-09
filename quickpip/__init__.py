@@ -8,7 +8,7 @@ quickpip.print_version
 import sys
 
 __project__ = "quickpip"
-__version__ = "0.0.0"
+__version__ = "0.0.4"
 
 from .quickpip import run
 

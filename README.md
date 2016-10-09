@@ -127,3 +127,7 @@ Add them in your `setup.py` under `install_requires`. Also add them in your `tox
 ### Changing your command line executable
 
 Edit your `__main__.py`
+
+### Contributing
+
+Feel free to make suggestions.
