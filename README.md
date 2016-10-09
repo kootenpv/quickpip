@@ -21,7 +21,7 @@ quickpip/quickpip             --> yourtool/yourtool
 quickpip/quickpip/quickpip.py --> yourtool/yourtool/yourtool.py
 ```
 
-- Go to the new root folder, `yourtool`, and replace `quickpip` occurences with `yourtool`:
+- Go to the new root folder, `yourtool`, and replace `quickpip` occurences with `yourtool` (can also be done manually):
 
 ```bash
 # OSX
@@ -69,6 +69,8 @@ username:yourusername
 password:yourpassword
 ```
 
+- Set your [classifiers](https://pypi.python.org/pypi?%3Aaction=list_classifiers) in `setup.py` to describe your package. A good moment to update README.md and README.rst, and perhaps the setup.py the url and description.
+
 - Register your new package on pypi:
 
 ```bash
@@ -83,7 +85,9 @@ python deploy.py
 
 Congratulations :) Now everyone can download *your tools* (using `pip install yourtools`)!
 
-Feel free to hit that "Star" button on [github](https://github.com/kootenpv/quickpip)
+Visit every file and try to cleanup whatever you want. Note that you can always test your changes and if something breaks, go back to a previous version on git.
+
+Feel free to hit that "Star" button on the [quickpip github](https://github.com/kootenpv/quickpip) :)
 
 ### The flow going forward
 
@@ -101,7 +105,7 @@ Feel free to hit that "Star" button on [github](https://github.com/kootenpv/quic
 
 - Nicely see your tests pass on [travis](https://travis-ci.org/kootenpv/yourtools), knowing that others can easily contribute.
 
-- When you've added a new feature, add 1 to your minor version in `setup.py`
+- When you've added a big new feature, add 1 to your minor version in `setup.py`
 
 - When you've made breaking changes, add 1 to your major version in `setup.py`
 
@@ -110,3 +114,7 @@ Feel free to hit that "Star" button on [github](https://github.com/kootenpv/quic
 ### Adding new packages
 
 Add them in your `setup.py` under `install_requires`. Also add them in your `tox.ini` file under `deps`.
+
+### Changing your command line executable
+
+Edit your `__main__.py`
