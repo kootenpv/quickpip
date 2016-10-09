@@ -1,8 +1,8 @@
 ## quickpip
 
-[![Build Status](https://travis-ci.org/kootenpv/quickpy.svg?branch=master)](https://travis-ci.org/kootenpv/quickpy)
-[![PyPI](https://img.shields.io/pypi/v/quickpy.svg?style=flat-square)](https://pypi.python.org/pypi/quickpy/)
-[![PyPI](https://img.shields.io/pypi/pyversions/quickpy.svg?style=flat-square)](https://pypi.python.org/pypi/quickpy/)
+[![Build Status](https://travis-ci.org/kootenpv/quickpip.svg?branch=master)](https://travis-ci.org/kootenpv/quickpip)
+[![PyPI](https://img.shields.io/pypi/v/quickpip.svg?style=flat-square)](https://pypi.python.org/pypi/quickpip/)
+[![PyPI](https://img.shields.io/pypi/pyversions/quickpip.svg?style=flat-square)](https://pypi.python.org/pypi/quickpip/)
 
 ### Initial flow
 
