@@ -1,5 +1,5 @@
 """ Our tests are defined in here """
-from quickpip import run
+from quickpip.quickpip import run
 
 
 def test_run():

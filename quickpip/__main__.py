@@ -2,7 +2,7 @@
 Then it is usually a good idea to separate the logic into it's own file: __main__
 """
 from quickpip import print_version
-from quickpip import run
+from quickpip.quickpip import run
 
 
 def get_args_parser():

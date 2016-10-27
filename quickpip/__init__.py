@@ -10,8 +10,6 @@ import sys
 __project__ = "quickpip"
 __version__ = "0.0.4"
 
-from .quickpip import run
-
 
 def print_version():
     """ Convenient function for printing the version of the package """
