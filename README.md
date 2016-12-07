@@ -38,7 +38,7 @@ find . -type f -print0 | xargs -0 sed -i '' 's/quickpip/yourtool/g'
 find . -type f -print0 | xargs -0 sed -i 's/quickpip/yourtool/g'
 ```
 
-- Install locally: `python setup.py install`
+- Install locally: `pip install -e .`
 
 - Run tests with `py.test` (quick) or `tox` (all python versions)
 
